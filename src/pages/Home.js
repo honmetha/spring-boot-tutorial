@@ -4,7 +4,7 @@ export default class ChangePassword extends Component {
   render() {
     return (
       <div>
-        Home
+        This is home
       </div>
     )
   }
