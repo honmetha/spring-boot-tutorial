@@ -1,9 +1,9 @@
 .Navbar-Main {
   background-color: #26485F;
-  padding: 3%;
+  padding: 0.7rem;
 }
 
 .Navbar-Border {
-  height: 9px;
+  height: 0.5rem;
   background-color: #A9DCFF;
 }
