@@ -20,13 +20,13 @@ export default class Navbar extends Component {
   render() {
     return (
       <div>
-        <Row className="Navbar-Main">
-          <Col span={18}>
+        <Row type="flex" align="middle" className="Navbar-Body">
+          <Col span={16}>
             <a href="http://localhost:3000/">
               <img src="maidProServiceLogo.png" alt="" width="125" />
             </a>
           </Col>
-          <Col span={6}>
+          <Col span={8}>
             <Row type="flex" justify="end">
               <Icon type="search" className="Navbar-Icon" />
               <Icon type="menu" className="Navbar-Icon" onClick={this.showDrawer} />
@@ -37,14 +37,14 @@ export default class Navbar extends Component {
                 onClose={this.onClose}
                 visible={this.state.visible}
               >
-                <p>Home</p>
-                <p>Search Maid</p>
-                <p>Payment</p>
-                <p>About Us</p>
-                <p>Login</p>
-                <p>Register</p>
-                <p>Join As Maid With Us</p>
-                <p>Policy</p>
+                <p><AiFillHome /> Home</p>
+                <p><FaSearch /> Search Maid</p>
+                <p><MdPayment /> Payment</p>
+                <p><MdPerson /> About Us</p>
+                <p><FiLogIn /> Login</p>
+                <p><TiPlus /> Register</p>
+                <p><GiBroom /> Join As Maid With Us</p>
+                <p><IoIosDocument /> Policy</p>
               </Drawer>
             </Row>
           </Col>
