@@ -1,6 +1,14 @@
 import React, { Component } from 'react'
 import './Navbar.css'
 import {Row, Col, Icon, Drawer} from 'antd'
+import { AiFillHome } from "react-icons/ai";
+import { FaSearch } from "react-icons/fa";
+import { MdPayment } from "react-icons/md";
+import { MdPerson } from "react-icons/md";
+import { FiLogIn } from "react-icons/fi";
+import { TiPlus } from "react-icons/ti";
+import { GiBroom } from "react-icons/gi";
+import { IoIosDocument } from "react-icons/io";
 
 export default class Navbar extends Component {
   state = { visible: false };
