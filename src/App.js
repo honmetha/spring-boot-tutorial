@@ -4,8 +4,8 @@ import 'antd/dist/antd.css';
 import { Route, Switch } from 'react-router-dom'
 import { Redirect } from 'react-router'
 import Home from './pages/Home'
-import Signup from './pages/Signup'
 import LoginPage from './pages/LoginPage/LoginPage'
+import Registeration from './pages/Registeration/Registeration'
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/login" component={LoginPage} />
-        <Route exact path="/signup" component={Signup} />
+        <Route exact path="/register" component={Registeration} />
         <Redirect to="/" />
       </Switch>
     </div>

@@ -1,0 +1,48 @@
+.Registeration-Body {
+  background: #F2F3F5;
+  padding: 20px 15px;
+  min-height: calc(100vh - 114px);
+}
+
+.Registeration-Card {
+  width: 350px;
+  border: none;
+}
+
+.Registeration-Photo {
+  border-radius: 50%;
+  margin-top: -5.5%;
+  margin-bottom: 2%;
+  /* margin-bottom: 2.2rem; */
+}
+
+.Registeration-InputMargin {
+  margin-bottom: 2%;
+  /* margin-bottom: 0.7rem; */
+}
+
+.Registeration-CreateAccountButton {
+  box-shadow: none;
+  border-radius: 11px;
+  border-color: #005792;
+  background-color: #005792;
+  color: white;
+  /* margin-top: 1.2rem; */
+  width: 130px;
+}
+
+.Registeration-CancelButton {
+  box-shadow: none;
+  border-radius: 11px;
+  border-color: #005792;
+  color: #005792;
+  margin-top: 2%;
+  /* margin-top: 0.7rem; */
+  width: 130px;
+}
+
+.Registeration-Footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
