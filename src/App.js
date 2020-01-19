@@ -7,6 +7,7 @@ import Home from './pages/Home'
 import LoginPage from './pages/LoginPage/LoginPage'
 import Registration from './pages/Registration/Registration'
 import RegistrationMaid from './pages/RegistrationMaid/RegistrationMaid'
+import MaidDescription from './pages/MaidDescription/MaidDescription'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route exact path="/login" component={LoginPage} />
         <Route exact path="/register" component={Registration} />
         <Route exact path="/registermaid" component={RegistrationMaid} />
+        <Route exact path="/maiddescription" component={MaidDescription} />
         <Redirect to="/" />
       </Switch>
     </div>
