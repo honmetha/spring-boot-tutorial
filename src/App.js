@@ -5,7 +5,7 @@ import { Route, Switch } from 'react-router-dom'
 import { Redirect } from 'react-router'
 import Home from './pages/Home'
 import LoginPage from './pages/LoginPage/LoginPage'
-import Registeration from './pages/Registeration/Registeration'
+import Registration from './pages/Registration/Registration'
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/login" component={LoginPage} />
-        <Route exact path="/register" component={Registeration} />
+        <Route exact path="/register" component={Registration} />
         <Redirect to="/" />
       </Switch>
     </div>
