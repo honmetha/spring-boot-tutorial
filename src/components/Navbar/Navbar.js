@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './Navbar.css'
-import {Row, Col, Icon, Drawer} from 'antd'
+import {Row, Col, Icon, Drawer, Button} from 'antd'
 import { AiFillHome } from "react-icons/ai";
 import { FaSearch } from "react-icons/fa";
 import { MdPayment } from "react-icons/md";
@@ -29,12 +29,12 @@ export default class Navbar extends Component {
     return (
       <div>
         <Row type="flex" align="middle" className="Navbar-Body">
-          <Col span={16}>
+          <Col span={4}>
             <a href="http://localhost:3000/">
               <img src="maidProServiceLogo.png" alt="" width="125" />
             </a>
           </Col>
-          <Col span={8}>
+          <Col span={20}>
             <Row type="flex" justify="end">
               <Icon type="search" className="Navbar-Icon" />
               <Icon type="menu" className="Navbar-Icon" onClick={this.showDrawer} />
@@ -54,6 +54,16 @@ export default class Navbar extends Component {
                 <p><GiBroom /> Join As Maid With Us</p>
                 <p><IoIosDocument /> Policy</p>
               </Drawer>
+            </Row>
+            <Row type="flex" justify="end" className="Navbar-Menu">
+              <Button className="Navbar-MenuButton">Home</Button>
+              <Button className="Navbar-MenuButton">Search</Button>
+              <Button className="Navbar-MenuButton">Payment</Button>
+              <Button className="Navbar-MenuButton">About Us</Button>
+              <Button className="Navbar-MenuButton">Login</Button>
+              <Button className="Navbar-MenuButton">Register</Button>
+              <Button className="Navbar-MenuButton">Join As Maid</Button>
+              <Button className="Navbar-MenuButton">Policy</Button>
             </Row>
           </Col>
         </Row>

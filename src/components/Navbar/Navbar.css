@@ -13,3 +13,32 @@
   height: 0.5rem;
   background-color: #A9DCFF;
 }
+
+.Navbar-MenuButton {
+  box-shadow: none;
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+  font-weight: 425;
+}
+
+.Navbar-MenuButton:hover {
+  background-color: transparent;
+}
+
+.Navbar-MenuButton:focus {
+  background-color: transparent;
+}
+
+@media only screen and (min-width: 845px) {
+  .Navbar-Icon {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 844px) {
+  .Navbar-Menu {
+    display: none;
+  }
+}
