@@ -3,7 +3,7 @@ import './App.css';
 import 'antd/dist/antd.css';
 import { Route, Switch } from 'react-router-dom'
 import { Redirect } from 'react-router'
-import Home from './pages/Home'
+import Home from './pages/Home/Home'
 import LoginPage from './pages/LoginPage/LoginPage'
 import Registration from './pages/Registration/Registration'
 import RegistrationMaid from './pages/RegistrationMaid/RegistrationMaid'
