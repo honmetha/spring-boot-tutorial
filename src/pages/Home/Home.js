@@ -4,6 +4,9 @@ import Navbar from '../../components/Navbar/Navbar'
 import Footer from '../../components/Footer/Footer'
 import { Row, Col, Carousel, Button } from 'antd';
 import { FaBuilding, FaHome } from "react-icons/fa";
+import Carousel1 from '../../images/Carousel1.jpeg'
+import Carousel2 from '../../images/Carousel2.jpg'
+import Carousel3 from '../../images/Carousel3.jpg'
 
 export default class ChangePassword extends Component {
   render() {
@@ -12,16 +15,13 @@ export default class ChangePassword extends Component {
         <Navbar />
         <Carousel autoplay>
           <div>
-            <img src="https://architecturesideas.com/wp-content/uploads/2019/12/Housekeeper2.jpg" alt="" width="100%" />
+            <img src={Carousel1} alt="" width="100%" />
           </div>
           <div>
-            <img src="https://images.wallpapersden.com/image/download/jennifer-aniston-sexy-cleavage-wallpapers_47469_1920x1080.jpg" alt="" width="100%" />
+            <img src={Carousel2} alt="" width="100%" />
           </div>
           <div>
-            <img src="https://architecturesideas.com/wp-content/uploads/2019/12/Housekeeper1.jpg" alt="" width="100%" />
-          </div>
-          <div>
-            <img src="https://images.wallpapersden.com/image/download/jennifer-aniston-sexy-cleavage-wallpapers_47469_1920x1080.jpg" alt="" width="100%" />
+            <img src={Carousel3} alt="" width="100%" />
           </div>
         </Carousel>
         <Row type="flex" justify="center">
