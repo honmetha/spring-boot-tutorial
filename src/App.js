@@ -10,6 +10,7 @@ import RegistrationMaid from './pages/RegistrationMaid/RegistrationMaid'
 import MaidDescription from './pages/MaidDescription/MaidDescription'
 import MyBookingHistory from './pages/MyBookingHistory/MyBookingHistory'
 import AboutUs from './pages/AboutUs/AboutUs'
+import Payment from './pages/Payment/Payment'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route exact path="/maiddescription" component={MaidDescription} />
         <Route exact path="/bookinghistory" component={MyBookingHistory} />
         <Route exact path="/aboutus" component={AboutUs} />
+        <Route exact path="/payment" component={Payment} />
         <Redirect to="/" />
       </Switch>
     </div>
