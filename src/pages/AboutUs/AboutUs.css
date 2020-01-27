@@ -1,14 +1,15 @@
 .AboutUs-Content {
-  margin-top: 3%;
+  margin-top: 3rem;
+  text-align: center;
 }
 
 .AboutUs-Margintop3p {
-  margin-top: 3%;
+  margin-top: 2rem;
 }
 
 .AboutUs-MapRow {
-  margin-top: 1%;
-  margin-bottom: 2%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .AboutUs-Map {
