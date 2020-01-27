@@ -1,3 +1,16 @@
 .AboutUs-Content {
   margin-top: 3%;
 }
+
+.AboutUs-Margintop3p {
+  margin-top: 3%;
+}
+
+.AboutUs-MapRow {
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
+
+.AboutUs-Map {
+  max-width: 600px;
+}
