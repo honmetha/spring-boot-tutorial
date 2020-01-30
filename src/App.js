@@ -11,6 +11,7 @@ import MaidDescription from './pages/MaidDescription/MaidDescription'
 import MyBookingHistory from './pages/MyBookingHistory/MyBookingHistory'
 import AboutUs from './pages/AboutUs/AboutUs'
 import Payment from './pages/Payment/Payment'
+import Policies from './pages/Policies/Policies'
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route exact path="/bookinghistory" component={MyBookingHistory} />
         <Route exact path="/aboutus" component={AboutUs} />
         <Route exact path="/payment" component={Payment} />
+        <Route exact path="/policies" component={Policies} />
         <Redirect to="/" />
       </Switch>
     </div>
