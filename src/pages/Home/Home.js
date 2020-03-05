@@ -1,7 +1,12 @@
 import React, { Component } from "react";
-import { Layout, Menu } from "antd";
+import { Layout, Menu, Card, Row, Col, Select, Input } from "antd";
 
 const { Header, Content, Footer, Sider } = Layout;
+const { Option } = Select;
+
+function handleChange(value) {
+  console.log(`selected ${value}`);
+}
 
 export default class Home extends Component {
   render() {
@@ -38,7 +43,48 @@ export default class Home extends Component {
                 className="site-layout-background"
                 style={{ padding: 24, minHeight: 360 }}
               >
-                content
+                <h3>เพิ่มเครื่องของลูกค้า</h3>
+                <Card>
+                  <Row>
+                    <Col>
+                      <Row>
+                        <h3>ข้อมูลเครื่อง</h3>
+                      </Row>
+                      <Row>
+                        <Col xs={12} sm={12} md={12} lg={12} xl={12}>
+                          <p>รุ่น</p>
+                        </Col>
+                        <Col xs={12} sm={12} md={12} lg={12} xl={12}>
+                          <Select
+                            defaultValue="lucy"
+                            style={{ width: 120 }}
+                            onChange={handleChange}
+                          >
+                            <Option value="jack">Jack</Option>
+                            <Option value="lucy">Lucy</Option>
+                            <Option value="disabled" disabled>
+                              Disabled
+                            </Option>
+                            <Option value="Yiminghe">yiminghe</Option>
+                          </Select>
+                        </Col>
+                      </Row>
+                      <Row>
+                        <Col xs={12} sm={12} md={12} lg={12} xl={12}>
+                          <p>หมายเลขเครื่อง</p>
+                        </Col>
+                        <Col xs={12} sm={12} md={12} lg={12} xl={12}>
+                          <Input placeholder="Basic usage" />
+                        </Col>
+                      </Row>
+                    </Col>
+                  </Row>
+                </Card>
+                <Card>
+                  <p>ข้อมูลเครื่อง</p>
+                  <p>รุ่น</p>
+                  <p>หมายเลขเครื่อง</p>
+                </Card>
               </div>
             </Content>
             <Footer style={{ textAlign: "center" }}>
