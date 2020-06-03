@@ -5,7 +5,7 @@ const Todo = ({ todo, index }) => {
 };
 
 const App = () => {
-  const [todos, setTodos] = useState([
+  const [todos] = useState([
     {
       text: "Learn about React",
       isCompleted: false,
@@ -23,9 +23,7 @@ const App = () => {
   return (
     <div className="app">
       <div className="todo-list">
-        {todos.map((todo, index) => {
-          <Todo key={index} index={index} todo={todo} />;
-        })}
+        {todos.map((todo, index) => <Todo key={index} index={index} todo={todo} />)}
       </div>
     </div>
   );
