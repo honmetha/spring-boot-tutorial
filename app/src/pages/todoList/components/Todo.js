@@ -3,7 +3,7 @@ import React from "react";
 const Todo = ({ todo, index, completeTodo, removeTodo }) => {
   return (
     <div
-      style={{ textDecoration: todo.iscompleted ? "line-through" : "" }}
+      style={{ textDecoration: todo.isCompleted ? "line-through" : "" }}
       className="todo"
     >
       {todo.text}
