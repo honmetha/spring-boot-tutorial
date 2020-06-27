@@ -3,6 +3,7 @@ import { Header } from "./components/Header";
 import { Balance } from "./components/Balance";
 import { IncomeExpenses } from "./components/IncomeExpenses";
 import { TransactionList } from "./components/TransactionList";
+import { AddTransaction } from "./components/AddTransaction";
 import "./expenseTracker.css";
 
 const List = () => {
@@ -13,6 +14,7 @@ const List = () => {
         <Balance />
         <IncomeExpenses />
         <TransactionList />
+        <AddTransaction />
       </div>
     </div>
   );
