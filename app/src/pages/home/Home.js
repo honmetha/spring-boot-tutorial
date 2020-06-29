@@ -12,9 +12,6 @@ const Home = () => {
           <li>
             <Link to="/todolist">Todo List</Link>
           </li>
-          <li>
-            <Link to="/expensetracker">Expense Tracker</Link>
-          </li>
         </ul>
       </nav>
     </Fragment>
