@@ -12,9 +12,6 @@ function App() {
         <Route exact path="/todolist">
           <TodoList />
         </Route>
-        <Route exact path="/expensetracker">
-          <ExpenseTracker />
-        </Route>
         <Route path="/">
           <Home />
         </Route>
