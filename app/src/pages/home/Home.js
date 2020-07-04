@@ -13,7 +13,7 @@ const Home = () => {
             <Link to="/todolist">Todo List</Link>
           </li>
           <li>
-            <Linkg to="/expensetracker">Expense Tracker</Linkg>
+            <Link to="/expensetracker">Expense Tracker</Link>
           </li>
         </ul>
       </nav>
