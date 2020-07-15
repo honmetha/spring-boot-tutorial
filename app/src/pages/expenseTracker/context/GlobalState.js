@@ -16,12 +16,12 @@ export const GlobalProvider = ({ children }) => {
   const [state, dispatch] = useReducer(AppReducer, initialState);
 
   return (
-    <GlobalContext.Provide
+    <GlobalContext.Provider
       value={{
         transactions: state.transactions,
       }}
     >
       {children}
-    </GlobalContext.Provide>
+    </GlobalContext.Provider>
   );
 };
