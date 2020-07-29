@@ -1,11 +1,15 @@
-import React, { Fragment, useState, useContext } from "react";
+import React, { Fragment, useState, useContext, useRef, useEffect } from "react";
 import { GlobalContext } from "../context/GlobalState";
 
 export const AddTransaction = () => {
   const [text, setText] = useState("");
   const [amount, setAmount] = useState("");
-
   const { addTransaction } = useContext(GlobalContext);
+  const inputRef = useRef();
+
+  useEffect(() => {
+    inputRef.current.focus()
+  }, [])
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -16,10 +20,11 @@ export const AddTransaction = () => {
       text,
       amount: +amount,
     };
-
+    
     addTransaction(newTodo);
     setText("");
     setAmount("");
+    inputRef.current.focus()
   };
 
   return (
@@ -30,6 +35,7 @@ export const AddTransaction = () => {
           <label htmlFor="text">Text</label>
           <input
             type="text"
+            ref={inputRef}
             value={text}
             onChange={(e) => setText(e.target.value)}
             placeholder="Enter text..."
