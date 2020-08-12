@@ -1,4 +1,4 @@
-.app {
+.todo-list-app {
   background: #209cee;
   padding: 30px;
   height: 100vh;
@@ -11,7 +11,7 @@
   max-width: 400px;
 }
 
-.todo {
+.todo-list-todo {
   background: #fff;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
   padding: 3px 10px;
@@ -23,7 +23,7 @@
   justify-content: space-between;
 }
 
-.input {
+.todo-list-input {
   width: 100%;
   box-sizing: border-box;
   border: 0;

@@ -37,7 +37,7 @@ const List = () => {
   };
 
   return (
-    <div className="app">
+    <div className="todo-list-app">
       <div className="todo-list">
         {todos.map((todo, index) => (
           <Todo
