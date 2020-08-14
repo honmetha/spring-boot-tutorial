@@ -11,7 +11,7 @@ const List = () => {
   return (
     <GlobalProvider>
       <Header />
-      <div className="container">
+      <div className="expense-tracker-container">
         <Balance />
         <IncomeExpenses />
         <TransactionList />
