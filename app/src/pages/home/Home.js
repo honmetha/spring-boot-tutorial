@@ -1,9 +1,10 @@
 import React from "react";
+import { Row } from "antd";
 import HomeCard from "./components/HomeCard";
 
 const Home = () => {
   return (
-    <div style={{ display: "flex", justifyContent: "center" }}>
+    <Row justify="center">
       <HomeCard
         image="https://media4.giphy.com/media/xTiTnuhyBF54B852nK/giphy.gif?cid=ecf05e47ntl44c0uu1x01b2pf6wd37hal2i9dlafx56g9ig4&rid=giphy.gif"
         text="Todo List"
@@ -20,7 +21,7 @@ const Home = () => {
         link="/breakingbadcast"
       />
       <HomeCard />
-    </div>
+    </Row>
   );
 };
 
