@@ -10,3 +10,7 @@ Spring Boot is an amazing framework that offers everything to build an applicati
 
 ## 🚀 Spring Initializr
 You can generate a Spring Boot project structure by using [Spring Initializr](https://start.spring.io/)
+
+## 🧭 Directions
+1. Generate a project using Spring Initializr
+1. Comment out database connection to start the server
